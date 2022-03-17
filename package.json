@@ -1,0 +1,28 @@
+{
+  "name": "game",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build-client": "webpack build --mode=production",
+    "auto-build-client": "webpack watch --mode=production",
+    "dev-server": "webpack serve --mode=development",
+    "server": "node ./server/index.js"
+  },
+  "dependencies": {
+    "@geckos.io/phaser-on-nodejs": "^1.2.7",
+    "nengi": "^1.26.0",
+    "phaser": "^3.55.2"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^10.2.4",
+    "css-loader": "^6.7.1",
+    "sass": "^1.49.9",
+    "sass-loader": "^12.6.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
