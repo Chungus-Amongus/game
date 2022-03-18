@@ -1,7 +1,6 @@
 export function ServerScene() {
 	Phaser.Scene.call(this, ServerScene.name)
 	this.tick = 0
-	// this.playersGroup = this.add.group()
 }
 ServerScene.prototype.init = function () {
 

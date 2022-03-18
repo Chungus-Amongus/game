@@ -1,6 +1,3 @@
-/*
-loaders of possible interest: sass-loader
-*/
 let path = require('path')
 let CopyPlugin = require('copy-webpack-plugin')
 let { CleanWebpackPlugin } = require('clean-webpack-plugin')
