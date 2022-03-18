@@ -1,2 +1,3 @@
 import "./style.scss"
-import "./nengi"
+import "./nengi.js"
+import "./phaser/phaser.js"

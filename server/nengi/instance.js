@@ -1,6 +1,6 @@
 import nengi from 'nengi'
-import { nengiConfig } from '../../shared/nengi/config'
-import { PositionHaver } from '../../shared/nengi/entities'
+import { nengiConfig } from '../../shared/nengi/config.js'
+import { PositionHaver } from '../../shared/nengi/entities.js'
 export class GameInstance {
     constructor() {
         this.players = new Map()

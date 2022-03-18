@@ -1,5 +1,5 @@
 import Phaser from 'phaser'
-import { LoginScene, TestScene } from './scenes.js';
+import { BootScene } from './boot-scene';
 
 //* the official config with all possible options is seen here: https://photonstorm.github.io/phaser3-docs/Phaser.Types.Core.html#.GameConfig
 //* configuration examples can be seen here: https://rexrainbow.github.io/phaser3-rex-notes/docs/site/game/#configuration
@@ -7,10 +7,10 @@ const phaserConfig = {
     type: Phaser.AUTO,
     title: "game title 123",
     version: '0.0.0',
-    backgroundColor: "rgb(120,0,0)",
+    backgroundColor: "rgb(255,255,0)",
     autoFocus: false, //automatically call window.focus() when the game boots
     disableContextMenu: true,
-    scene: [LoginScene, TestScene],
+    scene: [BootScene],
     input: {
         gamepad: false, //default is false
         smoothFactor: 0, //mouse smoothing
@@ -27,10 +27,10 @@ const phaserConfig = {
         zoom: 1,
         parent: 'phaserParent',
         expandParent: true,
-        mode: Phaser.Scale.FIT, //FIT, RESIZE, NONE, ENVELOP, HEIGHT_CONTROLS_WIDTH, WIDTH_CONTROLS_HEIGHT
-        autoCenter: Phaser.Scale.CENTER_BOTH, //CENTER_BOTH, CENTER_HORIZONTALLY, CENTER_VERTICALLY, NO_CENTER
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH,
         resizeInterval: 500,
-        autoRound: true, //supposedly keeping this on 'true' is a possible performance boost, it says so here: https://photonstorm.github.io/phaser3-docs/Phaser.Core.Config.html
+        autoRound: true, //supposedly keeping this 'true' is some kind of performance boost according to this: https://photonstorm.github.io/phaser3-docs/Phaser.Core.Config.html
     },
     physics: {
         default: 'arcade',

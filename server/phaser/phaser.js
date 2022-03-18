@@ -1,5 +1,3 @@
-import '@geckos.io/phaser-on-nodejs'
-import Phaser from 'phaser';
 import { ServerScene } from './server-scene.js';
 let fps = 60
 global.phaserOnNodeFPS = fps

@@ -1,6 +1,6 @@
-import { nengiConfig } from '../../shared/nengi/config'
-import GameInstance from './GameInstance'
-const gameInstance = new GameInstance(/*args*/)
+import { nengiConfig } from '../../shared/nengi/config.js'
+import { GameInstance } from './instance.js'
+export const gameInstance = new GameInstance(/*args*/)
 const hrtimeMs = function () {
 	let time = process.hrtime()
 	return time[0] * 1000 + time[1] / 1000000

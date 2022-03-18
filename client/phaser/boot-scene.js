@@ -1,6 +1,6 @@
 import { BaseScene } from "./base-scene"
 
-function BootScene() {
+export function BootScene() {
 	BaseScene.call(this, { key: BootScene.name })
 }
 BootScene.prototype.init = function(){

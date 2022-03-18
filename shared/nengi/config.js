@@ -1,7 +1,7 @@
 import nengi from 'nengi'
-import { PositionHaver } from './entities'
-import { TestCommand } from './commands'
-import { TestMessage } from './messages'
+import { TestCommand } from './commands.js'
+import { PositionHaver } from './entities.js'
+import { TestMessage } from './messages.js'
 
 export const nengiConfig = {
     UPDATE_RATE: 20, 
