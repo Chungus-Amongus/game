@@ -1,9 +1,7 @@
-import '@geckos.io/phaser-on-nodejs'
-import Phaser from 'phaser';
 export function ServerScene() {
 	Phaser.Scene.call(this, ServerScene.name)
 	this.tick = 0
-	this.playersGroup = this.add.group() // you can add players to the group, and you can iterate over the group when you need to iterate over all players, etc
+	// this.playersGroup = this.add.group()
 }
 ServerScene.prototype.init = function () {
 

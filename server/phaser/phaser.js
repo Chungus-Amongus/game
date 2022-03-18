@@ -4,8 +4,8 @@ global.phaserOnNodeFPS = fps
 let phaserConfig = {
     type: Phaser.HEADLESS,
     parent: 'phaser-game',
-    width: 400,
-    height: 300,
+    width: 800,
+    height: 600,
     banner: false,
     audio: false,
     scene: [ServerScene],

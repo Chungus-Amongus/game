@@ -1,4 +1,3 @@
-import '@geckos.io/phaser-on-nodejs'
-import Phaser from 'phaser'
-import "./nengi/nengi.js"
-import "./phaser/phaser.js"
+// we have to do this because of nengi. nengi says, and as you can see from these same lines in their templates, nengi can not be imported using 'import', its CommonJS only or whatever, so 'esm' lets us use nengi with 'import' because we cant use 'require' in this project because in this project we only are using 'import'
+require = require("esm")(module/*, options*/)
+module.exports = require("./entry.js")
