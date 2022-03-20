@@ -1,15 +1,31 @@
-export function BaseScene() {
-	Phaser.Scene.call(this, { key: BaseScene.name })
-}
-BaseScene.prototype.init = function(){
-    
-}
-BaseScene.prototype.preload = function () {
+// this is the ancestor to all scenes. not to be used for anything other than inheriting from
 
-}
-BaseScene.prototype.create = function () {
+// var config = {
+// 	key: "",
+// 	active: false,
+// 	visible: true,
+// 	pack: false,
+// 	cameras: null,
+// 	map: {},
+// 	physics: {},
+// 	loader: {},
+// 	plugins: false,
+// 	input: {}
+// }
+export class BaseScene extends Phaser.Scene {
+	constructor(config) {
+		super(config)
+	}
+	init() {
 
-}
-BaseScene.prototype.update = function () {
+	}
+	preload() {
 
+	}
+	create() {
+
+	}
+	update() {
+
+	}
 }

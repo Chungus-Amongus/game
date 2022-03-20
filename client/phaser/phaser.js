@@ -1,6 +1,6 @@
 import { BootScene } from './boot-scene';
 
-//* the official config with all possible options is seen here: https://photonstorm.github.io/phaser3-docs/Phaser.Types.Core.html#.GameConfig
+//* the official config with all possible options is seen here: https://photonstorm.github.io/phaser3-docs/Phaser.Types.Core.html#.GameConfig and also possibly here https://rexrainbow.github.io/phaser3-rex-notes/docs/site/game/
 //* configuration examples can be seen here: https://rexrainbow.github.io/phaser3-rex-notes/docs/site/game/#configuration
 const phaserConfig = {
     type: Phaser.AUTO,
@@ -10,12 +10,40 @@ const phaserConfig = {
     autoFocus: false, //automatically call window.focus() when the game boots
     disableContextMenu: true,
     scene: [BootScene],
+    loader:{
+        baseURL: '',
+        path: '',
+        enableParallel: true,
+        maxParallelDownloads: 4,
+        crossOrigin: undefined,
+        responseType: '',
+        async: true,
+        user: '',
+        password: '',
+        timeout: 0
+    },
+    fps: {
+        min: 10,
+        target: 60,
+        forceSetTimeOut: false,
+        deltaHistory: 10
+    },
     input: {
         gamepad: false, //default is false
         smoothFactor: 0, //mouse smoothing
     },
     render: {
         antialias: true,
+        // antialiasGL: true,
+        // desynchronized: false,
+        // clearBeforeRender: true,
+        // preserveDrawingBuffer: false,
+        // premultipliedAlpha: true,
+        // powerPreference: 'high-performance',
+        // batchSize: 4096,
+        // maxLights: 10,
+        // maxTextures: -1,
+        // mipmapFilter: 'LINEAR',
         pixelArt: false, //it says this sets antialias and roundPixels to 'true', is that it? could do that manually
         roundPixels: false,
         powerPreference: 'high-performance',
