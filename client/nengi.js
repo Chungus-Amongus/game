@@ -1,7 +1,7 @@
 import nengi from 'nengi'
 import { TestCommand } from '../shared/nengi/commands'
 import { nengiConfig } from '../shared/nengi/config'
-class GameClient {
+export class GameClient {
 	constructor() {
 		this.client = new nengi.Client(nengiConfig, 100)
 		this.client.onConnect(res => {
@@ -59,4 +59,3 @@ window.onload = function() {
     }
     loop()
 }
-export default GameClient

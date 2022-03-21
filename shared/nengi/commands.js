@@ -1,7 +1,14 @@
 import nengi from 'nengi'
-export function TestCommand(text) {
-	this.text = text
+// a request by the client to perform some game action
+export function ActionMessage(playerAction){
+	this.playerAction = playerAction
 }
-TestCommand.protocol = {
-	text: nengi.String
+ActionMessage.protocol = {
+	playerAction: nengi.UInt6
+}
+export function WASDMessage(wasdState){
+	this.wasdState = wasdState
+}
+WASDMessage.protocol = {
+	wasdState: nengi.UInt3
 }
