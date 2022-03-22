@@ -37,9 +37,9 @@ export class GameClient {
 		})
 		// output
 		// the only client-side game logic is to randomly send a test command
-		if (Math.random() > 0.95) {
-			this.client.addCommand(new TestCommand('hi this is a command from the client'))
-		}
+		// if (Math.random() > 0.95) {
+		// 	this.client.addCommand(new TestCommand('hi this is a command from the client'))
+		// }
 		this.client.update()
 	}
 }

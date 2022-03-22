@@ -1,5 +1,10 @@
 import nengi from 'nengi'
-// a request by the client to perform some game action
+export function TestCommand(text){
+	this.text = text
+}
+TestCommand.protocol = {
+	text: nengi.String
+}
 export function ActionMessage(playerAction){
 	this.playerAction = playerAction
 }

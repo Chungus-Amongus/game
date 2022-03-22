@@ -1,7 +1,7 @@
 import { BaseScene } from "./base-scene"
-export class Scene1 extends BaseScene {
+export class UIScene extends BaseScene {
 	constructor() {
-		super({key:Scene1.name})
+		super({ key: UIScene.name })
 	}
 	init() {
 
@@ -10,9 +10,8 @@ export class Scene1 extends BaseScene {
 
 	}
 	create() {
-		console.log(this.constructor.name)
 	}
 	update() {
-
+		console.log(this.constructor.name)
 	}
 }

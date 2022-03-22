@@ -1,4 +1,7 @@
 import { BootScene } from './boot-scene';
+import { InputScene } from './input-scene';
+import { Scene1 } from './main-scene';
+import { UIScene } from './ui-scene';
 
 //* the official config with all possible options is seen here: https://photonstorm.github.io/phaser3-docs/Phaser.Types.Core.html#.GameConfig and also possibly here https://rexrainbow.github.io/phaser3-rex-notes/docs/site/game/
 //* configuration examples can be seen here: https://rexrainbow.github.io/phaser3-rex-notes/docs/site/game/#configuration
@@ -9,7 +12,7 @@ const phaserConfig = {
     backgroundColor: "rgb(255,255,0)",
     autoFocus: false, //automatically call window.focus() when the game boots
     disableContextMenu: true,
-    scene: [BootScene],
+    scene: [BootScene, InputScene, UIScene, Scene1],
     loader:{
         baseURL: '',
         path: '',

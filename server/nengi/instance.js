@@ -1,6 +1,7 @@
 import nengi from 'nengi'
 import { nengiConfig } from '../../shared/nengi/config.js'
 import { PositionHaver } from '../../shared/nengi/entities.js'
+import { TestMessage } from '../../shared/nengi/messages.js'
 export class GameInstance {
     constructor() {
         this.players = new Map()
@@ -34,6 +35,9 @@ export class GameInstance {
                 }
             }
         }
+        // if(Math.random() < 0.05){
+        //     this.instance.messageAll(new TestMessage(`hi from server`))
+        // }
         this.instance.update()
     }
 }
