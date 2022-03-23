@@ -18,6 +18,6 @@ export class BootScene extends BaseScene {
 		this.platforms.create(400, 568, `obstacle`).setScale(1.5).refreshBody()
 	}
 	update() {
-		console.log(this.constructor.name)
+		// console.log(this.constructor.name)
 	}
 }

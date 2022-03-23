@@ -1,0 +1,3 @@
+// TODO: here we are going to have our own event emitter that we use globally for pretty much all our custom events. i was going to put event emitters per-scene or whatever but i saw an example (https://blog.ourcade.co/posts/2020/phaser3-how-to-communicate-between-scenes/) doing this instead and it looked better. a usecase is for example if a scene needs other scenes to know something it did it can register its event here in this global event emitter used by everyone and then fire the event and all the other scenes listening for that event can do whatever with it, and every single script knows where to look for any event; right here.
+
+export const events = new Phaser.Events.EventEmitter()
